@@ -32,7 +32,7 @@
     }
 
     header p {
-      margin: 0 0 0.5rem 0;
+      margin: 0 0 1rem 0;
     }
 
     header a {
@@ -43,6 +43,13 @@
 
     header a:hover {
       text-decoration: underline;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
 
     .nav-fixed {
@@ -178,19 +185,23 @@
       margin-top: -70px;
       visibility: hidden;
     }
+
+    .nowrap {
+      white-space: nowrap;
+    }
   </style>
 </head>
 
 <body>
   <header id="contact">
-    <div class="header-top">
+    <div>
       <h1>Маркелов Дмитрий Сергеевич</h1>
       <p>Middle+/Senior Frontend Developer (React)</p>
-      <p>
-        📍 Москва |
-        📧 <a href="mailto:mymaughem@gmail.com">mymaughem@gmail.com</a> |
-        ☎️ <a href="tel:+79779817710">+7 (977) 981-77-10</a> |
-        💬 <a href="https://t.me/myMaughem" target="_blank">@myMaughem</a>
+      <p class="contact-info">
+        <span class="nowrap">📍 Москва</span>
+        <span class="nowrap">📧 <a href="mailto:mymaughem@gmail.com">mymaughem@gmail.com</a></span>
+        <span class="nowrap">☎️ <a href="tel:+79779817710">+7 (977) 981-77-10</a></span>
+        <span class="nowrap">💬 <a href="https://t.me/myMaughem" target="_blank">@myMaughem</a></span>
       </p>
     </div>
 
