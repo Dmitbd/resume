@@ -156,7 +156,6 @@
       white-space: nowrap;
     }
 
-
     footer {
       text-align: center;
       padding: 2rem;
@@ -171,6 +170,19 @@
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .anchor-offset {
+      display: block;
+      height: 70px;
+      margin-top: -70px;
+      visibility: hidden;
+    }
+
+    @media (max-width: 600px) {
+      .header-top {
+        padding: 2.5rem 2rem 2rem;
+      }
     }
   </style>
 </head>
@@ -198,6 +210,7 @@
   </header>
 
   <section id="experience">
+    <div class="anchor-offset" aria-hidden="true"></div>
     <h2>Опыт работы</h2>
 
     <article class="job">
@@ -336,6 +349,7 @@
   </section>
 
   <section id="skills">
+    <div class="anchor-offset" aria-hidden="true"></div>
     <h2>Навыки</h2>
     <ul class="skills">
       <li>React</li>
@@ -371,11 +385,13 @@
   </section>
 
   <section id="education">
+    <div class="anchor-offset" aria-hidden="true"></div>
     <h2>Образование</h2>
     <p>МГУТУ им. К.Г. Разумовского — Бакалавр, инженер (2018)</p>
   </section>
 
   <section id="about">
+    <div class="anchor-offset" aria-hidden="true"></div>
     <h2>Обо мне</h2>
     <p>
       Frontend-разработчик с 5+ лет опыта в React/TypeScript. Развиваюсь в сторону роли Senior, интересуюсь архитектурой
